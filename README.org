@@ -1,0 +1,44 @@
+* About
+  *My Git Repos Manager* (=mgrmgr=, or =mgr^2=) is a small bash script that can automatically pull or push commits for a list of git repositories defined by user.
+
+* Usage
+
+*** Basic usage
+
+    To fill the default pull list of git repositories use the following bash commands:
+    
+    #+BEGIN_SRC bash
+    cd /path/to/a/first/git/repo
+    mgr2 add pull  # adds the current working dir to the default pull list
+    cd /path/to/a/second/git/repo
+    mgr2 add pull  # adds the current working dir to the default pull list
+    #+END_SRC
+
+    To pull commits into the default list of git repositories use the following bash command:
+
+    #+BEGIN_SRC bash
+    mgr2 pull  # pulls commits into all the dirs in the default pull list
+    #+END_SRC
+
+    Filling the default push list of git repositories and pushing commits from it can be done the same way:
+
+#+BEGIN_SRC bash
+    cd /path/to/a/first/git/repo
+    mgr2 add push  # adds the current working dir to the default push list
+    cd /path/to/a/second/git/repo
+    mgr2 add push  # adds the current working dir to the default push list
+    mgr2 push  # pushes commits from all the dirs in the default push list
+#+END_SRC
+
+*** Custom lists
+
+    To fill a custom list of git repositories both for pulling and pushing use the following bash commands:
+
+    #+BEGIN_SRC bash
+    cd /path/to/a/first/git/repo
+    mgr2 add list_name  # adds the current working dir to a custom list
+    cd /path/to/a/second/git/repo
+    mgr2 add list_name  # adds the current working dir to a custom list
+    mgr2 pull list_name  # pulls commits into all the dirs in the list 'list_name'
+    mgr2 push list_name  # pushes commits from all the dirs in the list 'list_name'
+    #+END_SRC
