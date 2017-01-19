@@ -1,5 +1,5 @@
 * About
-  *My Git Repos Manager* (mgrmgr, or mgr^2) is a small Bash shell script that can automatically pull or push commits for a list of git repositories defined by user.
+  *My Git Repos Manager* (=mgrmgr=, or =mgr2=) is a small Bash shell script that can automatically pull or push commits for a list of git repositories defined by user.
 
 * Usage
 
